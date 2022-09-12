@@ -5,8 +5,7 @@ const closeModal = document.querySelector('.close-modal');
 const overlay = document.querySelector('.overlay');
 const characterContainer = document.querySelector('.chracters--list');
 const statusType = document.querySelector('.status-type');
-// let green = document.querySelector('.status-type').style.backgroundColor = 'yellow';
-// let red = document.querySelector('.status-type').style.backgroundColor = 'pink';
+
 const showModal = function() {
     modal.classList.remove('hidden');
     overlay.classList.remove('hidden');
@@ -31,7 +30,7 @@ document.addEventListener('keydown', function(e) {
 overlay.addEventListener('click', removeModal);
 
 const createChracter = function(data, data2) {
-        const html = `
+    const html = `
         <div class="chracter">
             <div>
                 <img src="${data.image}" alt="">
@@ -50,11 +49,9 @@ const createChracter = function(data, data2) {
                 </div>
             </div>
     `;
-        characterContainer.insertAdjacentHTML('beforeend', html);
-    }
-    //<b class="status-type">.${data.status === "Alive" ? green : red}</b> 
-    //<p style="margin-top:.6em;"><a href='#'>${data2.name}</a></p>
-    // <p style="margin-top:.6em;"><a href='#'>${data.episode[0]}</a></p>
+    characterContainer.insertAdjacentHTML('beforeend', html);
+}
+
 const getChracter = function(character, episode) {
     setTimeout(function() {
         try {
@@ -90,17 +87,3 @@ getChracter(814, 51);
 getChracter(800, 47);
 getChracter(230, 7);
 getChracter(120, 5);
-
-
-
-// const getEpisode = function(data3) {
-//     fetch(`https://rickandmortyapi.com/api/location/${data3}`)
-//         .then(res => {
-//             return res.json();
-//         })
-//         .then(info22 => {
-//             console.log(info22.name);
-//         })
-// };
-// getEpisode(30);
-// getEpisode(44);
