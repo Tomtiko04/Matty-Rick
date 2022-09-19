@@ -142,11 +142,11 @@ searchBar.addEventListener("submit", function(e) {
                             </div>
                             <span>Species:</span>
                             <br>
-                            <p style="margin-top: .5em; margin-bottom: .5em;">${
+                            <p style="margin-top: .5em; margin-bottom: .5em;color:white;">${
                               rec.species
                             }</p>
                             <span>Type:</span>
-                            <p style="margin-top:.5em;">${
+                            <p style="margin-top:.5em;color:white;">${
                               rec.type === "" ? "unknown" : rec.type
                             }</p>
                         </div>
