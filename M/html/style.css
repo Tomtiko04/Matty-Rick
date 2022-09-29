@@ -397,3 +397,43 @@ img {
     text-decoration: none;
     font-size: 0.9rem;
 }
+
+/*media quries*/
+
+@media (max-width: 690px) {
+    .navbar .nav-menu p {
+        display: none;
+    }
+}
+
+@media (max-width: 654px) {
+    .search__field {
+        width: 15rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .default__page,
+    .search__section {
+        grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    }
+    .chracters__section {
+        padding-inline: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    .search__field {
+        width: 12rem;
+        font-size: 0.9rem;
+    }
+    .search__btn {
+        width: 8rem;
+    }
+    .search {
+        padding-left: 1em;
+    }
+    .navbar .nav-menu button {
+        width: 12rem;
+    }
+}
