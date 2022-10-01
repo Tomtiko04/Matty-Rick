@@ -398,6 +398,32 @@ img {
     font-size: 0.9rem;
 }
 
+.biggg {
+    flex-basis: 20px;
+}
+
+.read__more {
+    margin-top: 4em;
+    text-align: center;
+    position: relative;
+    left: -100%;
+    animation: anim3 2s forwards 3s;
+}
+
+.read__more button {
+    padding: 1em 2em 1em 2em;
+    background-color: transparent;
+    color: var(--white);
+    border: 1px solid var(--primary-color);
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.read__more button:hover {
+    color: var(--primary-color);
+    letter-spacing: 0.05em;
+}
+
 /*media quries*/
 
 @media (max-width: 690px) {
