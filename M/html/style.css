@@ -422,6 +422,7 @@ img {
 .read__more button:hover {
     color: var(--primary-color);
     letter-spacing: 0.05em;
+    transition: 0.2s ease-in;
 }
 
 /*media quries*/
