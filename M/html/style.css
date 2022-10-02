@@ -463,4 +463,23 @@ img {
     .navbar .nav-menu button {
         width: 12rem;
     }
+     .chracter {
+        flex-direction: column;
+        gap: 0rem;
+    }
+    .chracter img {
+        width: 100%;
+        max-width: 438px;
+    }
+    .chracter__info {
+        margin-left: 0.7em;
+    }
+    .typee {
+        margin-bottom: 1em;
+    }
+}
+@media (max-width: 390px) {
+    .header .nav-menu .support-btn {
+        display: none;
+    }
 }
