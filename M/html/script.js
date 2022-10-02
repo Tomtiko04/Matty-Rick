@@ -50,7 +50,7 @@ const createChracter = data => {
         const html = `
     <div class="chracter">
     <div>
-        <img src="${data.image}" alt="">
+        <img src="${data.image}"loading="lazy" alt="">
     </div>
     <div class="chracter__info">
         <h2>${data.name}</h2>
@@ -78,7 +78,7 @@ const searchResult = data => {
             <div>
                 <img src="https://rickandmortyapi.com/api/character/avatar/${
                   data.id
-                }.jpeg" alt="">
+                }.jpeg" loading="lazy" alt="">
             </div>
         
             <div class="chracter__info">
