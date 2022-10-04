@@ -127,7 +127,6 @@ const getChracter = async () => {
     try {
       fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
         .then(res => {
-          console.log(res);
           return res.json();
         })
         .then(res => {
@@ -156,11 +155,9 @@ const readMore = () => {
       try {
         fetch(`https://rickandmortyapi.com/api/character/?page=${page}`)
           .then(res => {
-            console.log(res);
             return res.json();
           })
           .then(inf => {
-            console.log(inf);
             const result1 = inf.results;
             console.log(result1);
             result1.map(data => {
