@@ -148,6 +148,7 @@ const readMore = () => {
   readMoreCreate();
   readMoreControl.addEventListener('click', function (e) {
     spinner.classList.add('hidden');
+    loadMoreSpinner.classList.remove('hidden');
     const btn = e.target.closest('button');
     if (!btn) return;
     page++;
@@ -164,12 +165,13 @@ const readMore = () => {
             console.log(result1);
             result1.map(data => {
               createChracter(data);
+              loadMoreSpinner.classList.add('hidden');
             });
           });
       } catch (error) {
         console.log(error);
       }
-    }, 500);
+    }, 1000);
   });
 };
 getChracter();
