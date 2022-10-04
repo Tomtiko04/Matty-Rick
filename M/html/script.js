@@ -10,6 +10,7 @@ const searchInput = document.querySelector('.search__field');
 const searchBtn = document.querySelector('.search__btn');
 const searchCloseBtn = document.querySelector('.search--close--btn');
 const readMoreControl = document.querySelector('.read__more');
+const loadMoreSpinner = document.querySelector('.spinner-load');
 
 const green = `<b style="background-color: #55cc44; color:#55cc44;" class="biggg">.</b>`;
 const red = `<b style="background-color: #d63d2e; color: #d63d2e;" class="biggg">.</b>`;
@@ -28,7 +29,16 @@ const renderSpinner = () => {
 
 renderSpinner();
 
+const renderSpinnerLoadMore = () => {
+    const markup = `
+      <svg>
+          <use href="img/icons.svg#icon-loader"></use>
+      </svg>
+`;
+    loadMoreSpinner.insertAdjacentHTML('beforeend', markup);
+};
 
+renderSpinnerLoadMore();
 
 const errorMessage = () => {
     const message = `
