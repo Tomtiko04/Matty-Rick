@@ -63,7 +63,7 @@ const createChracter = data => {
             <p><a href="${data.location.url}">${data.location.name}</a></p>
         </div>
         <br>
-        <div class="location__info">
+        <div class="location__info typee">
           <span>Type :</span>
             <p class="info-p">${data.type === '' ? 'unknown' : data.type}</p>
         </div>
@@ -92,7 +92,7 @@ const searchResult = data => {
                 <p class="info-p">${data.species}</p>
             </div>
             <br>
-            <div class="location__info">
+            <div class="location__info type">
                 <span>Type :</span>
                 <p class="info-p">${
                   data.type === '' ? 'unknown' : data.type
