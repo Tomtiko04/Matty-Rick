@@ -102,7 +102,7 @@ const searchResult = data => {
                 <p class="info-p">${data.species}</p>
             </div>
             <br>
-            <div class="location__info type">
+            <div class="location__info typee">
                 <span>Type :</span>
                 <p class="info-p">${
                   data.type === '' ? 'unknown' : data.type
