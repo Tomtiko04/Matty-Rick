@@ -134,6 +134,7 @@ const getChracter = async () => {
           result1.map(data => {
             createChracter(data);
             spinner.classList.add('hidden');
+              
           });
         });
     } catch (error) {
@@ -147,6 +148,7 @@ const readMore = () => {
   readMoreCreate();
   readMoreControl.addEventListener('click', function (e) {
     spinner.classList.add('hidden');
+      readMoreControl.querySelector('button').classList.add('hidden');
     loadMoreSpinner.classList.remove('hidden');
     const btn = e.target.closest('button');
     if (!btn) return;
@@ -163,6 +165,9 @@ const readMore = () => {
             result1.map(data => {
               createChracter(data);
               loadMoreSpinner.classList.add('hidden');
+                 readMoreControl
+                .querySelector('button')
+                .classList.remove('hidden');
             });
           });
       } catch (error) {
