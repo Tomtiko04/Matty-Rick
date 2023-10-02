@@ -1,6 +1,7 @@
 # Ogunneye Oyinkansola - The Rick and Morty API
 
-## The Rick and Morty Character Listing Website was created as a practical application to test and demonstrate proficiency in working with APIs. Inspired by the popular animated series "Rick and Morty," this project aimed to list and display characters from the show using the Rick and Morty API.
+## Welcome! 👋
+The Rick and Morty Character Listing Website was created as a practical application to test and demonstrate proficiency in working with APIs. Inspired by the popular animated series "Rick and Morty," this project aimed to list and display characters from the show using the Rick and Morty API.
 
 ## Key Features:
 
